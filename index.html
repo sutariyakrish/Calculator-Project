@@ -26,7 +26,7 @@
         <button style="grid-area: box-d" class="box" onclick="displayOutput+='/';document.querySelector('.input-box').value=displayOutput;">/</button>
         <button style="grid-area: box-C" class="box" onclick="displayOutput='';document.querySelector('.input-box').value=displayOutput;">C</button>
         <button style="grid-area: box-dot" class="box"onclick="displayOutput+='.';document.querySelector('.input-box').value=displayOutput;">.</button>
-        <button style="grid-area: box-e" class="box equals" onclick="document.querySelector('.input-box').value=eval(displayOutput);">=</button>
+        <button style="grid-area: box-e" class="box equals" onclick="document.querySelector('.input-box').value=Math.round(eval(displayOutput));">=</button>
       </div>
     </div>
     <script>
