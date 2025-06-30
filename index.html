@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input class="input-box" type="text" />
+      <div class="grid">
+        <button style="grid-area: box-1" class="box" onclick="displayOutput+='1';document.querySelector('.input-box').value=displayOutput;">1</button>
+        <button style="grid-area: box-2" class="box" onclick="displayOutput+='2';document.querySelector('.input-box').value=displayOutput;">2</button>
+        <button style="grid-area: box-3" class="box" onclick="displayOutput+='3';document.querySelector('.input-box').value=displayOutput;">3</button>
+        <button style="grid-area: box-4" class="box" onclick="displayOutput+='4';document.querySelector('.input-box').value=displayOutput;">4</button>
+        <button style="grid-area: box-5" class="box" onclick="displayOutput+='5';document.querySelector('.input-box').value=displayOutput;">5</button>
+        <button style="grid-area: box-6" class="box" onclick="displayOutput+='6';document.querySelector('.input-box').value=displayOutput;">6</button>
+        <button style="grid-area: box-7" class="box" onclick="displayOutput+='7';document.querySelector('.input-box').value=displayOutput;">7</button>
+        <button style="grid-area: box-8" class="box" onclick="displayOutput+='8';document.querySelector('.input-box').value=displayOutput;">8</button>
+        <button style="grid-area: box-9" class="box" onclick="displayOutput+='9';document.querySelector('.input-box').value=displayOutput;">9</button>
+        <button style="grid-area: box-0" class="box" onclick="displayOutput+='0';document.querySelector('.input-box').value=displayOutput;">0</button>
+        <button style="grid-area: box-p" class="box" onclick="displayOutput+='+';document.querySelector('.input-box').value=displayOutput;">+</button>
+        <button style="grid-area: box-s" class="box" onclick="displayOutput+='-';document.querySelector('.input-box').value=displayOutput;">-</button>
+        <button style="grid-area: box-m" class="box" onclick="displayOutput+='*';document.querySelector('.input-box').value=displayOutput;">*</button>
+        <button style="grid-area: box-d" class="box" onclick="displayOutput+='/';document.querySelector('.input-box').value=displayOutput;">/</button>
+        <button style="grid-area: box-C" class="box" onclick="displayOutput='';document.querySelector('.input-box').value=displayOutput;">C</button>
+        <button style="grid-area: box-dot" class="box"onclick="displayOutput+='.';document.querySelector('.input-box').value=displayOutput;">.</button>
+        <button style="grid-area: box-e" class="box equals" onclick="document.querySelector('.input-box').value=eval(displayOutput);">=</button>
+      </div>
+    </div>
+    <script>
+      let displayOutput = '';
+      document.querySelector('.input-box').value=displayOutput;
+    </script>
+  </body>
+</html>
